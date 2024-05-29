@@ -1,0 +1,209 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --body-font: "Inter", sans-serif;
+    --theme-bg: #1f1d2b;
+    --body-color: #808191;
+    --button-bg: #353340;
+    --border-color: rgb(128 129 145 / 24%);
+    --video-bg: #252936;
+    --delay: 0s;
+}
+
+.bodyy {
+    font-family: var(--body-font);
+    color: var(--body-color);
+    background-image: url("../images/page2img1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color-dodge;
+    background-color: rgb(57, 55, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em 2em;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bodyy:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(163deg, #1f1d2b 21%, rgba(31, 29, 43, 0.3113620448) 64%);
+    opacity: 0.4;
+    content: "";
+}
+
+.container {
+    background-color: var(--theme-bg);
+    max-width: 1250px;
+    max-height: 1250px;
+    height: 120vh;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 20px 50px rgb(57, 55, 60);
+    position: relative;
+}
+
+.sidebar {
+    width: 220px;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    transition-duration: 0.2s;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+
+.sidebar .logo {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: #22b07d;
+    flex-shrink: 0;
+    color: #fff;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--body-color);
+}
+
+.side-menu a + a {
+    margin-top: 26px;
+}
+
+.side-menu svg {
+    width: 30px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--button-bg);
+    flex-shrink: 0;
+    margin-right: 16px;
+}
+
+.side-title {
+    font-size: 12px;
+    letter-spacing: 0.07em;
+    margin-bottom: 24px;
+}
+
+.side-wrapper {
+    border-bottom: 1px solid var(--border-color);
+    padding: 36px 0;
+    width: 145px;
+}
+
+.side-wrapper + .side-wrapper {
+    border-bottom: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 30px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.anim {
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: var(--delay);
+}
+
+.main-header {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #1f1d2b 0%, #1f1d2b 78%, rgba(31, 29, 43, 0) 100%);
+    z-index: 11;
+}
+
+.small-header {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin: 30px 0 20px;
+}
+
+.genres-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between; /* Ensures even spacing */
+    margin-top: 20px; /* Add margin to prevent overlap */
+}
+
+.genre-box {
+    flex: 1 1 calc(33.333% - 1em); /* Three boxes per row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    height: 150px; /* Fixed height */
+    width: 150px;
+    background-color: #252936; /* Background color for the box */
+}
+
+
+
+.genre-box img {
+    width: 100%;
+    height: 100%; /* Fixed height for the image */
+    object-fit:cover; /* Ensures the image covers the area without stretching */
+}
+

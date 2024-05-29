@@ -1,0 +1,162 @@
+/* Username.css */
+
+.wrapperB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../images/usernameblur.png') no-repeat center center/cover; /* Add your background image path here */
+    background-color: #f7f7f7;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .wrapperB::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+  }
+ 
+  .wrapperB ul{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .wrapperB ul li{
+    list-style: none;
+    font-family: arial;
+    font-size: 3em;
+    letter-spacing: 15px;
+    text-shadow: none;
+    animation: animate 3s infinite linear ;
+  }
+  @keyframes animate {
+    0%{
+        color: #484848;
+        text-shadow: none;
+    }
+    18%{
+        color: #484848;
+        text-shadow: none;
+    }
+    20%{
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900,0 0 20px #ff6c00;
+    }
+    30%{
+        color: #484848;
+        text-shadow: none;
+    }
+    35%{
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900,0 0 20px #ff6c00;
+    }
+    70%{
+        color: #484848;
+        text-shadow: none;
+    }
+    85%{
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900,0 0 20px #ff6c00;
+    }
+    90%{
+        color: #484848;
+        text-shadow: none;
+    }
+    100%{
+        color: #484848;
+        text-shadow: none;
+    }
+  }
+
+.wrapperB ul li:nth-child(1){
+    animation-delay: 0.2s;
+}
+.wrapperB ul li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.wrapperB ul li:nth-child(3){
+    animation-delay: 0.6s;
+}
+.wrapperB ul li:nth-child(4){
+    animation-delay: 0.8s;
+}
+.wrapperB ul li:nth-child(5){
+    animation-delay: 1s;
+}
+.wrapperB ul li:nth-child(6){
+    animation-delay: 1.2s;
+}
+.wrapperB ul li:nth-child(7){
+    animation-delay: 1.4s;
+}
+.wrapperB ul li:nth-child(8){
+    animation-delay: 1.6s;
+}
+.wrapperB ul li:nth-child(9){
+    animation-delay: 1.8s;
+}
+.wrapperB ul li:nth-child(10){
+    animation-delay: 2s;
+}
+.wrapperB ul li:nth-child(11){
+    animation-delay: 2.1s;
+}
+  .form-boxx {
+    background: url('../images/page2img1.jpg') no-repeat center center/cover;
+    padding: 150px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    z-index: 1; /* Ensure it is above the overlay */
+  }
+  
+  .input-boxx {
+    position: relative;
+    margin-bottom: 20px; /* Add margin for spacing */
+  }
+  
+  .input-boxx input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #999; /* Set the color of the text to #999 */
+    text-align: center;
+  }
+  
+  .input-boxx i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #ccc;
+  }
+  
+  .submit2 {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  
+
+  
